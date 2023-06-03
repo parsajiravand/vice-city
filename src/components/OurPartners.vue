@@ -9,8 +9,8 @@ console.log(imageUrl(1));
   <section class="our-partners container-md text-center">
     <h1 class="mb-5">Some Of Our Partners</h1>
 
-    <div class="d-flex flex-wrap flex-row justify-content-center ">
-      <div v-for="index in 10" class="col-6 col-md-2 mx-2 my-2 patner-box">
+    <div class="justify-content-center row">
+      <div v-for="index in 10" class="col-5 col-sm-3 col-md-2 mx-2 my-2 patner-box">
         <img :src="imageUrl(index)" alt="partner-logo" />
       </div>
     </div>
