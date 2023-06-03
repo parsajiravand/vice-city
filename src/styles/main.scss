@@ -1,0 +1,11 @@
+@import "./pages/404.scss";
+@font-face {
+  font-family: Montserrat;
+  //add Montserrat url
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+}
+
+.main-bg {
+  background-color: #08030F;
+  font-family: Montserrat !important ;
+}
