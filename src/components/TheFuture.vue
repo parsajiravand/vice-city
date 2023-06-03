@@ -29,7 +29,7 @@ import CircleEffect from './shared/CircleEffect.vue'
         <button class="btn btn-custom-primary text-uppercase">Contact Us</button>
       </div>
     </div>
-    <CircleEffect top="15rem" />
+    <CircleEffect top="10rem" />
   </section>
 </template>
 <style lang="scss">

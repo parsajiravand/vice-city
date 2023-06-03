@@ -3,7 +3,6 @@ const imageUrl = (index: number): string => {
   return new URL(`../assets/partners/partner-${index}.png`, import.meta.url)
     .href;
 };
-console.log(imageUrl(1));
 </script>
 <template>
   <section class="our-partners container-md text-center">
