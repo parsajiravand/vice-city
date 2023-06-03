@@ -1,6 +1,8 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import CircleEffect from './shared/CircleEffect.vue'
+</script>
 <template>
-  <section class="the-future row px-4 px-md-0">
+  <section class="the-future row px-4 px-md-0 position-relative">
     <div class="col-5 d-none d-md-flex">
       <img
         src="@/assets/robot-hand-finger-pointing-ai-technology-backgrou-2022-09-16-09-23-42-utc-1.png"
@@ -27,6 +29,7 @@
         <button class="btn btn-custom-primary text-uppercase">Contact Us</button>
       </div>
     </div>
+    <CircleEffect top="15rem" />
   </section>
 </template>
 <style lang="scss">

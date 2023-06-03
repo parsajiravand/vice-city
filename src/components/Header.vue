@@ -1,4 +1,6 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import CircleEffect from "./shared/CircleEffect.vue";
+</script>
 <template>
   <div class="header">
     <section class="">
@@ -48,13 +50,11 @@
           </div>
         </div>
       </nav>
-      <div
-        class="circle-effect d-flex justify-content-center align-items-center"
-        style=""
-      ></div>
+      <CircleEffect />
       <div
         class="w-50 mx-auto d-flex justify-content-center align-items-center py-4"
       >
+        
         <img
           src="@/assets/header-main-vector.svg"
           class="position-absolute vector-1"
@@ -171,32 +171,5 @@
   100% {
     transform: translateY(0px);
   }
-}
-.circle-effect {
-  border-radius: 50%;
-
-  background: #bd00ff;
-  opacity: 0.8;
-  filter: blur(400px);
-  width: 750px;
-  height: 750px;
-  left: 30%;
-  position: absolute;
-  /* add some animation for this class */
-  animation: circle-effect 10s infinite;
-}
-@keyframes circle-effect {
- //advance animation
-
-  0% {
-    transform: scale(0.5);
-  }
-  50% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0.5);
-  }
-
 }
 </style>
