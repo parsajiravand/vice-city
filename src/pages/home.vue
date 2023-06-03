@@ -5,6 +5,7 @@ import OurPartners from "../components/OurPartners.vue";
 import TheFuture from "../components/TheFuture.vue";
 import HelpYou from "../components/HelpYou.vue";
 import Labs from "../components/Labs.vue";
+import MeetPartners from "../components/MeetPartners.vue";
 </script>
 <template>
   <main class="main-bg text-white">
@@ -14,5 +15,6 @@ import Labs from "../components/Labs.vue";
     <TheFuture class="py-5" />
     <HelpYou class="py-5" />
     <Labs class="py-5" />
+    <MeetPartners class="py-5" />
   </main>
 </template>
