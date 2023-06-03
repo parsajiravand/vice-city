@@ -33,8 +33,8 @@
         >
       </p>
       <div class="gap-3 my-5 d-flex">
-        <button class="btn btn-custom-primary">Vice City Labs</button>
-        <button class="btn text-custom-primary border border-custom-primary">Vice City Labs</button>
+        <button class="btn btn-custom-primary text-uppercase">Vice City Labs</button>
+        <button class="btn text-custom-primary border border-custom-primary text-uppercase">Vice City Labs</button>
       </div>
     </div>
     <div style="margin-top: -54px;">
