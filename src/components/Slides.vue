@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
+//@ts-ignore
 import { Navigation } from "swiper";
 const modules = [Navigation];
 const swiperRef = ref(null);
@@ -46,23 +47,12 @@ const swiperRef = ref(null);
         },
       }"
     >
-      <swiper-slide
-        class="d-flex flex-column"
-        v-for="(item, index) in 10"
-        :key="index"
-      >
+      <swiper-slide class="d-flex flex-column" v-for="index in 10" :key="index">
         <div class="d-flex align-items-center justify-content-start mb-2">
-          <img
-            src="@/assets/calendar.webp"
-            alt=""
-          />
+          <img src="@/assets/calendar.webp" alt="" />
           <h6 class="m-0 ms-2 fs-6">Jun 8, 2022</h6>
         </div>
-        <img
-          class="w-100 rounded-3"
-          src="@/assets/slider.webp"
-          alt="slider"
-        />
+        <img class="w-100 rounded-3" src="@/assets/slider.webp" alt="slider" />
       </swiper-slide>
     </swiper>
   </section>

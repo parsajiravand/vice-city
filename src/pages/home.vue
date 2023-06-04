@@ -1,4 +1,9 @@
 <script setup lang="ts">
+import { onMounted } from "vue";
+//@ts-ignore
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import Header from "../components/Header.vue";
 import WhatWeDo from "../components/WhatWeDo.vue";
 import OurPartners from "../components/OurPartners.vue";
@@ -10,22 +15,23 @@ import VCEvents from "../components/VCEvents.vue";
 import ContactForm from "../components/ContactForm.vue";
 import Footer from "../components/Footer.vue";
 import Slides from "../components/Slides.vue";
+onMounted(() => {
+  AOS.init();
+});
 </script>
 <template>
   <main class="main-bg text-white">
     <Header />
-    <WhatWeDo />
-    <OurPartners class="pb-5" />
-    <TheFuture class="py-5" />
-    <HelpYou class="py-5" />
-    <Labs class="py-5" />
-    <MeetPartners class="py-5" />
-    <VCEvents class="py-5" />
-    <Slides class="py-5" />
-    <ContactForm class="py-5" />
+    <WhatWeDo data-aos="fade-up" />
+    <OurPartners class="pb-5" data-aos="fade-up" />
+    <TheFuture class="py-5" data-aos="fade-up" />
+    <HelpYou class="py-5" data-aos="fade-up" />
+    <Labs class="py-5" data-aos="fade-up" />
+    <MeetPartners class="py-5" data-aos="fade-up" />
+    <VCEvents class="py-5" data-aos="fade-up" />
+    <Slides class="py-5" data-aos="fade-up" />
+    <ContactForm class="py-5" data-aos="fade-up" />
     <Footer class="py-5" />
   </main>
 </template>
-<style>
-
-</style>
+<style></style>
