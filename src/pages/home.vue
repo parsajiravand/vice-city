@@ -9,6 +9,7 @@ import MeetPartners from "../components/MeetPartners.vue";
 import VCEvents from "../components/VCEvents.vue";
 import ContactForm from "../components/ContactForm.vue";
 import Footer from "../components/Footer.vue";
+import Slides from "../components/Slides.vue";
 </script>
 <template>
   <main class="main-bg text-white">
@@ -20,6 +21,7 @@ import Footer from "../components/Footer.vue";
     <Labs class="py-5" />
     <MeetPartners class="py-5" />
     <VCEvents class="py-5" />
+    <Slides class="py-5" />
     <ContactForm class="py-5" />
     <Footer class="py-5" />
   </main>
