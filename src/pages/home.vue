@@ -15,6 +15,7 @@ import VCEvents from "../components/VCEvents.vue";
 import ContactForm from "../components/ContactForm.vue";
 import Footer from "../components/Footer.vue";
 import Slides from "../components/Slides.vue";
+
 onMounted(() => {
   AOS.init();
 });

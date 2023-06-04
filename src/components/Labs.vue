@@ -57,7 +57,7 @@
           </span>
         </div>
         <div class="my-4">
-          <button class="btn btn-custom-primary text-uppercase px-4 fw-bold">
+          <button class="btn btn-custom-primary py-3 px-4 fw-bold text-uppercase lh-1 mx-auto">
             Schedule a Call
           </button>
         </div>

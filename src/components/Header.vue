@@ -29,7 +29,6 @@ import CircleEffect from "./shared/CircleEffect.vue";
         >
           <ul
             class="navbar-nav d-flex my-2 my-lg-0 navbar-nav-scroll gap-4 px-4"
-            style="--bs-scroll-height: 100px"
           >
             <li class="nav-item">
               <a class="nav-link active text-white" aria-current="page" href="#"
@@ -40,7 +39,7 @@ import CircleEffect from "./shared/CircleEffect.vue";
               <a class="nav-link text-white" href="#">What We Do</a>
             </li>
             <li>
-              <button class="btn btn-custom-primary">Contact Us</button>
+              <button class="btn btn-custom-primary py-3 px-4 fw-bold text-uppercase lh-1 mx-auto">Contact Us</button>
             </li>
           </ul>
         </div>

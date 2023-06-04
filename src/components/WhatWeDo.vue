@@ -33,19 +33,25 @@
             program for early-stage startups, called Vice City Lab!</span
           >
         </p>
-        <div class="gap-3 my-5">
-          <button class="btn btn-custom-primary text-uppercase">
+        <div class="my-5">
+          <button
+            class="btn btn-custom-primary py-3 px-4 fw-bold text-uppercase lh-1 mx-2"
+          >
             Vice City Labs
           </button>
           <button
-            class="btn text-custom-primary border border-custom-primary text-uppercase"
+            class="btn text-custom-primary border border-custom-primary text-uppercase py-3 px-4 fw-bold text-uppercase lh-1 mx-2"
           >
             Vice City Labs
           </button>
         </div>
       </div>
       <div style="margin-top: -54px" class="col-12 col-md-6 treeple-image">
-        <img src="@/assets/what-we-do.png" alt="what-we-do" />
+        <img
+          src="@/assets/what-we-do.png"
+          alt="what-we-do"
+          style="width: 100%"
+        />
       </div>
     </div>
   </section>
