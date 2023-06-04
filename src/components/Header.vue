@@ -28,7 +28,7 @@ import CircleEffect from "./shared/CircleEffect.vue";
           id="navbarScroll"
         >
           <ul
-            class="navbar-nav d-flex my-2 my-lg-0 navbar-nav-scroll gap-4 px-4"
+            class="navbar-nav d-flex my-2 my-lg-0 navbar-nav-scroll gap-4 px-4 align-items-center"
           >
             <li class="nav-item">
               <a class="nav-link active text-white" aria-current="page" href="#"
@@ -90,7 +90,7 @@ import CircleEffect from "./shared/CircleEffect.vue";
     </div>
   </section>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
 .header {
   background-image: radial-gradient(
     circle at 0.5px 0.5px,

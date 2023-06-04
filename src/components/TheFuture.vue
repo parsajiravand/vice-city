@@ -11,8 +11,7 @@ import CircleEffect from "./shared/CircleEffect.vue";
     </div>
     <div class="col-md-7 col-sm-8 col-lg-6 col-12 px-4">
       <h1>The future awaits those who dare!</h1>
-      <h1>Let´s pioneer together.</h1>
-      <div class="gradient-border"></div>
+      <spam class="underline-gradiant h1">Let´s pioneer together.</spam>
       <p class="h5 py-4 w-75">
         <b>
           The Vice City Ventures managing team is made up of hard-core
@@ -32,21 +31,11 @@ import CircleEffect from "./shared/CircleEffect.vue";
         </button>
       </div>
     </div>
-    <CircleEffect top="10rem" />
+    <CircleEffect top="-10px" width="500px" height="500px" />
   </section>
 </template>
-<style lang="scss">
-.gradient-border {
-  height: 2px;
-  width: 65%;
-  background-image: linear-gradient(
-    to right,
-    #f9a826,
-    #f99726 50%,
-    #f98c26 50%,
-    #f96226 100%
-  );
-}
+<style lang="scss" scoped>
+
 .robot-image {
   img {
     max-width: 400px;

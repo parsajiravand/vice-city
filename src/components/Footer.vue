@@ -2,7 +2,7 @@
 import CircleEffect from "./shared/CircleEffect.vue";
 </script>
 <template>
-  <footer class="mainFooter py-4 blurAreaMark position-relative z-1">
+  <footer class="footer py-4 position-relative z-1">
     <div class="container">
       <div class="links row justify-content-center mb-5 pb-4">
         <div
@@ -22,27 +22,21 @@ import CircleEffect from "./shared/CircleEffect.vue";
           <a
             class="d-flex align-items-center justify-content-center rounded-circle"
             href=""
-            ><img
-              src="https://storage.googleapis.com/content.ezadtv.com/2023/01/01/63b1c69377c2c_fb.webp"
-              alt=""
+            ><img src="@/assets/facebook.svg" alt="facebook"
           /></a>
         </li>
         <li class="mx-2">
           <a
             class="d-flex align-items-center justify-content-center rounded-circle"
             href=""
-            ><img
-              src="https://storage.googleapis.com/content.ezadtv.com/2023/01/01/63b1c6389e5f5_tw.webp"
-              alt=""
+            ><img src="@/assets/twitter.svg" alt="twitter"
           /></a>
         </li>
         <li class="mx-2">
           <a
             class="d-flex align-items-center justify-content-center rounded-circle"
             href=""
-            ><img
-              src="https://storage.googleapis.com/content.ezadtv.com/2023/01/01/63b1c67763217_insta.webp"
-              alt=""
+            ><img src="@/assets/instagram.svg" alt="instagram"
           /></a>
         </li>
       </ul>
@@ -54,7 +48,7 @@ import CircleEffect from "./shared/CircleEffect.vue";
   </footer>
 </template>
 <style lang="scss">
-.mainFooter .links {
+.footer .links {
   a {
     text-decoration: none;
     color: #ffffff;

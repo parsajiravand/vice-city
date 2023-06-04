@@ -5,7 +5,7 @@
   >
     <div class="row justify-content-center align-items-center">
       <div class="col-md-6 col-12 px-4">
-        <h1 class="fw-bold">Vice City Labs</h1>
+        <span class="fw-bold underline-gradiant h1">Vice City Labs</span>
         <div class="gradient-border"></div>
         <p class="h5 py-4 w-75">
           <b> We help entrepreneurs to build million-dollar startups</b
@@ -45,7 +45,7 @@
           technological solutions through the usage of Artificial Intelligence
           and Web 3 in ANY type of industry!
         </h4>
-        <div class="h  mt-2">
+        <div class="h mt-2">
           <b>
             If you think our incubation program brings the missing parts of the
             puzzle you are looking to solve, Let's take the first step and
@@ -57,7 +57,9 @@
           </span>
         </div>
         <div class="my-4">
-          <button class="btn btn-custom-primary py-3 px-4 fw-bold text-uppercase lh-1 mx-auto">
+          <button
+            class="btn btn-custom-primary py-3 px-4 fw-bold text-uppercase lh-1 mx-auto"
+          >
             Schedule a Call
           </button>
         </div>
@@ -65,19 +67,7 @@
     </div>
   </section>
 </template>
-<style lang="scss">
-.gradient-border {
-  margin-top: -15px;
-  height: 2px;
-  width: 40%;
-  background-image: linear-gradient(
-    to right,
-    #f9a826,
-    #f99726 50%,
-    #f98c26 50%,
-    #f96226 100%
-  );
-}
+<style lang="scss" scoped>
 .labs-box {
   background: linear-gradient(
     90deg,

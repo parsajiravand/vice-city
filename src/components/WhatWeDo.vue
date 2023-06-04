@@ -46,13 +46,17 @@
           </button>
         </div>
       </div>
-      <div style="margin-top: -54px" class="col-12 col-md-6 treeple-image">
-        <img
-          src="@/assets/what-we-do.png"
-          alt="what-we-do"
-          style="width: 100%"
-        />
+      <div style="" class="col-12 col-md-6 treeple-image">
+        <img src="@/assets/what-we-do.png" alt="what-we-do" />
       </div>
     </div>
   </section>
 </template>
+<style lang="scss" scoped>
+.treeple-image {
+  margin-top: -54px;
+  img {
+    width: 100%;
+  }
+}
+</style>

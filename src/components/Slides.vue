@@ -57,7 +57,7 @@ const swiperRef = ref(null);
     </swiper>
   </section>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
 .mySwiper {
   .swiper-button-prev {
     color: #ffffff;
