@@ -20,9 +20,9 @@
         </div>
         <div class="col-md-6 position-relative">
           <img
-            src="https://storage.googleapis.com/content.ezadtv.com/2022/12/28/63ac75fd379c5_teamTriangle.webp"
+            src="@/assets/team-triangle.webp"
             alt=""
-            class="position-absolute top-0 end-0 z-1 teamOverImage"
+            class="position-absolute top-0 end-0 team-triangle"
           />
           <div class="row justify-content-center align-items-center">
             <div class="col-md-6 col-xxl-5">
@@ -93,3 +93,17 @@
     </div>
   </section>
 </template>
+<style lang="scss" scoped>
+.team-triangle {
+  /* add animation for team-triangle */
+  animation: team-triangle 1s ease-in-out infinite alternate;
+}
+@keyframes team-triangle {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+</style>

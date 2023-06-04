@@ -4,6 +4,16 @@ defineProps({
     type: String,
     required: false,
   },
+  width: {
+    type: String,
+    required: false,
+    default: "750px",
+  },
+  height: {
+    type: String,
+    required: false,
+    default: "750px",
+  },
 });
 </script>
 <template>
@@ -17,8 +27,8 @@ defineProps({
   background: #bd00ff;
   opacity: 0.8;
   filter: blur(400px);
-  width: 750px;
-  height: 750px;
+  width: v-bind(width);
+  height: v-bind(height);
   left: 30%;
   position: absolute;
   animation: circle-effect 10s infinite;
