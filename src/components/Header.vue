@@ -2,100 +2,94 @@
 import CircleEffect from "./shared/CircleEffect.vue";
 </script>
 <template>
-  <div class="header">
-    <section class="">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <div class="logo p-2">
-              <img
-                src="../assets/vicecity-logo-neon-raster.svg"
-                alt="logo"
-              /></div
-          ></a>
-          <button
-            class="navbar-toggler text-white"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarScroll"
-            aria-controls="navbarScroll"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+  <section class="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <div class="logo p-2">
+            <img
+              src="../assets/vicecity-logo-neon-raster.svg"
+              alt="logo"
+            /></div
+        ></a>
+        <button
+          class="navbar-toggler text-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarScroll"
+        >
+          <ul
+            class="navbar-nav d-flex my-2 my-lg-0 navbar-nav-scroll gap-4 px-4"
+            style="--bs-scroll-height: 100px"
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarScroll"
-          >
-            <ul
-              class="navbar-nav d-flex my-2 my-lg-0 navbar-nav-scroll gap-4 px-4"
-              style="--bs-scroll-height: 100px"
-            >
-              <li class="nav-item">
-                <a
-                  class="nav-link active text-white"
-                  aria-current="page"
-                  href="#"
-                  >Who We Are</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">What We Do</a>
-              </li>
-              <li>
-                <button class="btn btn-custom-primary">Contact Us</button>
-              </li>
-            </ul>
-          </div>
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >Who We Are</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">What We Do</a>
+            </li>
+            <li>
+              <button class="btn btn-custom-primary">Contact Us</button>
+            </li>
+          </ul>
         </div>
-      </nav>
-      <CircleEffect />
-      <div
-        class="w-50 mx-auto d-flex justify-content-center align-items-center py-4"
-      >
-        
-        <img
-          src="@/assets/header-main-vector.svg"
-          class="position-absolute vector-1"
-          alt="vector"
-        />
-        <img
-          src="@/assets/header-main-vector-2.svg"
-          class="position-absolute vector-2"
-          alt="vector"
-        />
-        <img
-          src="@/assets/header-main-vector-3.svg"
-          class="position-absolute vector-3"
-          alt="vector"
-        />
-        <img
-          src="@/assets/header-main-vector-4.svg"
-          class="position-absolute vector-4"
-          alt="vector"
-        />
-        <h1 class="text-white text-center py-10 header-text">
-          Paving the way for innovative startups and entrepreneurs into the
-          future of AI, Web 3, and beyond!
-        </h1>
       </div>
-      <div class="py-8 text-center d-flex flex-column move-down">
-        <img
-          src="@/assets/angel-down.svg"
-          class="mx-auto"
-          width="15px"
-          alt="vector"
-        />
-        <img
-          src="@/assets/angel-down.svg"
-          class="mx-auto"
-          width="15px"
-          alt="vector"
-        />
-      </div>
-    </section>
-  </div>
+    </nav>
+    <CircleEffect />
+    <div
+      class="w-50 mx-auto d-flex justify-content-center align-items-center py-4"
+    >
+      <img
+        src="@/assets/header-main-vector.svg"
+        class="position-absolute vector-1"
+        alt="vector"
+      />
+      <img
+        src="@/assets/header-main-vector-2.svg"
+        class="position-absolute vector-2"
+        alt="vector"
+      />
+      <img
+        src="@/assets/header-main-vector-3.svg"
+        class="position-absolute vector-3"
+        alt="vector"
+      />
+      <img
+        src="@/assets/header-main-vector-4.svg"
+        class="position-absolute vector-4"
+        alt="vector"
+      />
+      <h1 class="text-white text-center py-10 header-text">
+        Paving the way for innovative startups and entrepreneurs into the future
+        of AI, Web 3, and beyond!
+      </h1>
+    </div>
+    <div class="py-8 text-center d-flex flex-column move-down">
+      <img
+        src="@/assets/angel-down.svg"
+        class="mx-auto"
+        width="15px"
+        alt="vector"
+      />
+      <img
+        src="@/assets/angel-down.svg"
+        class="mx-auto"
+        width="15px"
+        alt="vector"
+      />
+    </div>
+  </section>
 </template>
 <style lang="scss">
 .header {
@@ -171,5 +165,8 @@ import CircleEffect from "./shared/CircleEffect.vue";
   100% {
     transform: translateY(0px);
   }
+}
+.header {
+  background: url(../assets/code.webp) left 100px top 200px no-repeat;
 }
 </style>

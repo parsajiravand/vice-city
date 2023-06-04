@@ -17,8 +17,13 @@
   );
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
+::placeholder {
+  color: #ffffff !important;
+  opacity: 0.3 !important;
+}
 .form-control {
   height: 38px;
+
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0.1) 0%,
