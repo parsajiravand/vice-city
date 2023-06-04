@@ -42,7 +42,7 @@
           <button
             class="btn text-custom-primary border border-custom-primary text-uppercase py-3 px-4 fw-bold text-uppercase lh-1 mx-2"
           >
-            Vice City Labs
+            Events
           </button>
         </div>
       </div>

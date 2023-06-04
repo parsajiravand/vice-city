@@ -1,5 +1,10 @@
 <script lang="ts" setup>
 import CircleEffect from "./shared/CircleEffect.vue";
+const emit = defineEmits(["scrollId"]);
+
+const getScrollId = (id: string) => {
+  emit("scrollId", id);
+};
 </script>
 <template>
   <section class="header">
@@ -31,15 +36,29 @@ import CircleEffect from "./shared/CircleEffect.vue";
             class="navbar-nav d-flex my-2 my-lg-0 navbar-nav-scroll gap-4 px-4 align-items-center"
           >
             <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#"
-                >Who We Are</a
+              <button
+                class="nav-link active text-white"
+                aria-current="page"
+                @click="getScrollId('whoWeAre')"
               >
+                Who We Are
+              </button>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">What We Do</a>
+              <button
+                class="nav-link text-white"
+                @click="getScrollId('whatWeDo')"
+              >
+                What We Do
+              </button>
             </li>
             <li>
-              <button class="btn btn-custom-primary py-3 px-4 fw-bold text-uppercase lh-1 mx-auto">Contact Us</button>
+              <button
+                @click="getScrollId('contact')"
+                class="btn btn-custom-primary py-3 px-4 fw-bold text-uppercase lh-1 mx-auto"
+              >
+                Contact Us
+              </button>
             </li>
           </ul>
         </div>
@@ -74,12 +93,14 @@ import CircleEffect from "./shared/CircleEffect.vue";
         of AI, Web 3, and beyond!
       </h1>
     </div>
-    <div class="py-8 text-center d-flex flex-column move-down">
+
+    <div  class="py-8 text-center d-flex flex-column move-down" >
       <img
         src="@/assets/angel-down.svg"
         class="mx-auto"
         width="15px"
         alt="vector"
+        
       />
       <img
         src="@/assets/angel-down.svg"

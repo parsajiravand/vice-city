@@ -59,13 +59,21 @@ const HelpYouItems: IHelpYouItem[] = [
     desc: "We will help you build a business development strategy that will ensure your product's success.",
   },
 ];
+
+// scroll to id
+const scrollTo = (id: string): void => {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth" });
+  }
+};
 </script>
 <template>
   <main class="main-bg text-white">
     <!-- Header -->
-    <Header />
+    <Header @scroll-id="scrollTo" />
     <!-- WhatWeDo -->
-    <WhatWeDo data-aos="fade-up" />
+    <WhatWeDo data-aos="fade-up" id="whatWeDo" />
     <!-- OurPartners -->
     <OurPartners class="pb-5" data-aos="fade-up" />
     <!-- TheFuture -->
@@ -75,13 +83,13 @@ const HelpYouItems: IHelpYouItem[] = [
     <!-- Labs -->
     <Labs class="py-5" data-aos="fade-up" />
     <!-- MeetPartners -->
-    <MeetPartners class="py-5" data-aos="fade-up" />
+    <MeetPartners class="py-5" data-aos="fade-up" id="whoWeAre" />
     <!-- VCEvents -->
     <VCEvents class="py-5" data-aos="fade-up" />
     <!-- Slides -->
     <Slides class="py-5" data-aos="fade-up" />
     <!-- ContactForm -->
-    <ContactForm class="py-5" data-aos="fade-up" />
+    <ContactForm class="py-5" data-aos="fade-up" id="contact" />
     <!-- Footer -->
     <Footer class="py-5" />
   </main>

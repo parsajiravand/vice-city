@@ -73,3 +73,9 @@
     }
   }
 }
+.btn-custom-primary{
+  &:hover{
+   background-color: #1CB5BC;
+   border: 1px solid #1CB5BC ;
+  }
+}
