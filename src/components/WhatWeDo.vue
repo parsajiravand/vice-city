@@ -44,7 +44,7 @@
           </button>
         </div>
       </div>
-      <div style="margin-top: -54px" class="col-12 col-md-6">
+      <div style="margin-top: -54px" class="col-12 col-md-6 treeple-image">
         <img src="@/assets/what-we-do.png" alt="what-we-do" />
       </div>
     </div>

@@ -9,4 +9,5 @@
 <style lang="scss">
 // Main demo style scss
 @import "./styles/main.scss";
+
 </style>

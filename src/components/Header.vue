@@ -48,7 +48,7 @@ import CircleEffect from "./shared/CircleEffect.vue";
     </nav>
     <CircleEffect />
     <div
-      class="w-50 mx-auto d-flex justify-content-center align-items-center py-4"
+      class="hero-section mx-auto d-flex justify-content-center align-items-center py-4"
     >
       <img
         src="@/assets/header-main-vector.svg"
@@ -70,7 +70,7 @@ import CircleEffect from "./shared/CircleEffect.vue";
         class="position-absolute vector-4"
         alt="vector"
       />
-      <h1 class="text-white text-center py-10 header-text">
+      <h1 class="text-white text-center py-md-10 header-text">
         Paving the way for innovative startups and entrepreneurs into the future
         of AI, Web 3, and beyond!
       </h1>
@@ -111,6 +111,19 @@ import CircleEffect from "./shared/CircleEffect.vue";
     -webkit-text-fill-color: transparent;
     background-clip: text;
     z-index: 11;
+  }
+  .hero-section {
+    width: 50%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+
+      img {
+        width: 75%;
+      }
+      h1 {
+        font-size: 30px;
+      }
+    }
   }
 }
 /* add some animation for vector-1 class and vector-2 class */

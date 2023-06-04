@@ -63,7 +63,7 @@
             </form>
           </div>
         </div>
-        <div class="col-md-12 col-lg-6">
+        <div class="col-md-12 col-lg-6 treeple-image">
           <img src="@/assets/VC-event.webp" alt="" />
         </div>
       </div>

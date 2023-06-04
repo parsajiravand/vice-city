@@ -65,3 +65,11 @@
   background-position: left bottom 4px;
   background-repeat: no-repeat;
 }
+.treeple-image {
+  @media screen and (max-width: 768px) {
+    img {
+      //responsive image
+      width: 100%;
+    }
+  }
+}

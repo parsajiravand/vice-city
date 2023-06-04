@@ -24,6 +24,11 @@ defineProps({
   animation: circle-effect 10s infinite;
   // add props
   top: v-bind(top);
+  @media screen and (max-width: 768px) {
+    width: 350px;
+    height: 350px;
+    left: 5%;
+  }
 }
 @keyframes circle-effect {
   //advance animation
