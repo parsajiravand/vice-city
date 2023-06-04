@@ -6,6 +6,57 @@
 }
 
 .main-bg {
-  background-color: #08030F;
+  background-color: #08030f;
   font-family: Montserrat !important ;
+}
+.form-card {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.03) 0%,
+    rgba(255, 255, 255, 0.009) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.form-control {
+  height: 38px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  &:focus {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.03) 100%
+    );
+    border: 1px solid #ffa650;
+  }
+}
+.form-check-input:checked {
+  background-color: #ed41ab;
+  border-color: #ed41ab;
+}
+.underline-gradiant {
+  background: rgb(195, 46, 103);
+  background: -moz-linear-gradient(
+    315deg,
+    rgba(195, 46, 103, 1) 0%,
+    rgba(255, 185, 80, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    315deg,
+    rgba(195, 46, 103, 1) 0%,
+    rgba(255, 185, 80, 1) 100%
+  );
+  background: linear-gradient(
+    315deg,
+    rgba(195, 46, 103, 1) 0%,
+    rgba(255, 185, 80, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c32e67",endColorstr="#ffb950",GradientType=1);
+  background-size: 100% 3px;
+  background-position: left bottom 4px;
+  background-repeat: no-repeat;
 }
