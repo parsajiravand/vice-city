@@ -7,7 +7,7 @@
 
 .main-bg {
   background-color: #08030f;
-  font-family: Montserrat !important ;
+  font-family: Montserrat, sans-serif, Arial, Helvetica;
 }
 .form-card {
   background: linear-gradient(
@@ -73,9 +73,9 @@
     }
   }
 }
-.btn-custom-primary{
-  &:hover{
-   background-color: #1CB5BC;
-   border: 1px solid #1CB5BC ;
+.btn-custom-primary {
+  &:hover {
+    background-color: #1cb5bc;
+    border: 1px solid #1cb5bc;
   }
 }
