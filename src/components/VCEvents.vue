@@ -1,7 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineProps({
+  componentId: {
+    type: String,
+    default: "events",
+  },
+});
+</script>
 <template>
   <section
-    id="events"
+    :id="componentId"
     class="position-relative eventsSection py-5 position-relative z-1"
   >
     <div class="container position-relative z-1">
@@ -70,6 +77,4 @@
     </div>
   </section>
 </template>
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>

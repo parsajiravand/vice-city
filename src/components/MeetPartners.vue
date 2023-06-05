@@ -1,6 +1,16 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+defineProps({
+  componentId: {
+    type: String,
+    default: "whoWeAre",
+  },
+});
+</script>
 <template>
-  <section class="meet-partners position-relative team-section pt-0 pt-md-5 pb-0 pb-md-5 z-2">
+  <section
+    :id="componentId"
+    class="meet-partners position-relative team-section pt-0 pt-md-5 pb-0 pb-md-5 z-2"
+  >
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6">

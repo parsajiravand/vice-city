@@ -3,7 +3,7 @@ import {
   createWebHashHistory,
   type RouteRecordRaw,
 } from "vue-router";
-import layoutDefault from "@/layouts/default.vue";
+import layoutDefault from "../layouts/default.vue";
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
@@ -13,14 +13,14 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: "/",
         name: "home",
-        component: () => import("@/pages/home.vue"),
+        component: () => import("../pages/home.vue"),
       },
     ],
   },
 
   {
     path: "/404",
-    component: () => import("@/layouts/error.vue"),
+    component: () => import("../layouts/error.vue"),
   },
   {
     path: "/:pathMatch(.*)*",

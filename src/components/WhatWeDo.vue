@@ -1,6 +1,18 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineProps({
+  componentId: {
+    type: String,
+    default: "whatWeDo",
+  },
+});
+const emit = defineEmits(["scrollId"]);
+
+const getScrollId = (id: string) => {
+  emit("scrollId", id);
+};
+</script>
 <template>
-  <section class="container">
+  <section class="container" :id="componentId">
     <div class="what-we-do row py-10">
       <div class="col-12 col-md-6">
         <h1 class="my-4">What We Do</h1>
@@ -35,11 +47,13 @@
         </p>
         <div class="my-5">
           <button
+            @click="getScrollId('labs')"
             class="btn btn-custom-primary py-3 px-4 fw-bold text-uppercase lh-1 mx-2"
           >
             Vice City Labs
           </button>
           <button
+            @click="getScrollId('events')"
             class="btn text-custom-primary border border-custom-primary text-uppercase py-3 px-4 fw-bold text-uppercase lh-1 mx-2"
           >
             Events

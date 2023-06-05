@@ -136,6 +136,7 @@ const getScrollId = (id: string) => {
     width: 50%;
     @media screen and (max-width: 768px) {
       width: 100%;
+      margin-top: 40px;
 
       img {
         width: 75%;

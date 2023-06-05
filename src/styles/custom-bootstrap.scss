@@ -45,21 +45,6 @@ $theme-colors: map-merge(
   )
 );
 
-/* custom grid-breakpoints */
-$grid-breakpoints: () !default;
-$grid-breakpoints: map-merge(
-  (
-    xxxs: 0px,
-    xxs: 320px,
-    xs: 480px,
-    sm: 768px,
-    md: 1024px,
-    lg: 1280px,
-    xl: 1400px,
-    xxl: 1920px,
-  ),
-  $grid-breakpoints
-);
 
 /*  custom spacer   */
 $spacer: 1rem !default;

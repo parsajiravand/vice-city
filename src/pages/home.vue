@@ -73,7 +73,7 @@ const scrollTo = (id: string): void => {
     <!-- Header -->
     <Header @scroll-id="scrollTo" />
     <!-- WhatWeDo -->
-    <WhatWeDo data-aos="fade-up" id="whatWeDo" />
+    <WhatWeDo data-aos="fade-up" @scroll-id="scrollTo" />
     <!-- OurPartners -->
     <OurPartners class="pb-5" data-aos="fade-up" />
     <!-- TheFuture -->
@@ -81,11 +81,16 @@ const scrollTo = (id: string): void => {
     <!--HelpYou  -->
     <HelpYou :items="HelpYouItems" class="py-5" data-aos="fade-up" />
     <!-- Labs -->
-    <Labs class="py-5" data-aos="fade-up" />
+    <Labs class="py-5" data-aos="fade-up" id="labs" @scroll-id="scrollTo" />
     <!-- MeetPartners -->
-    <MeetPartners class="py-5" data-aos="fade-up" id="whoWeAre" />
+    <MeetPartners class="py-5" data-aos="fade-up" />
     <!-- VCEvents -->
-    <VCEvents class="py-5" data-aos="fade-up" />
+    <VCEvents
+      class="py-5"
+      data-aos="fade-up"
+      id="events"
+      @scroll-id="scrollTo"
+    />
     <!-- Slides -->
     <Slides class="py-5" data-aos="fade-up" />
     <!-- ContactForm -->

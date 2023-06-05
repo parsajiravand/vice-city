@@ -1,6 +1,6 @@
 <script setup lang="ts"></script>
 <template>
-  <section id="contact" class="py-5 mt-3 contact-form position-relative">
+  <section class="py-5 mt-3 contact-form position-relative">
     <div class="container py-0 py-md-5">
       <div class="row justify-content-center">
         <div class="col-xxl-6 col-lg-8">
@@ -22,7 +22,7 @@
                 type="email"
                 name="email"
                 class="form-control shadow-sm rounded-3 text-light small-text lh-base"
-                id="email"
+                required
               />
             </div>
             <div class="mb-4">
@@ -34,7 +34,7 @@
                 name="phone"
                 type="text"
                 class="form-control shadow-sm rounded-2 text-light small-text lh-base"
-                id="phone"
+                required
               />
             </div>
             <div class="mb-4">
@@ -46,7 +46,7 @@
                 type="text"
                 name="company"
                 class="form-control shadow-sm rounded-2 text-light small-text lh-base"
-                id="company"
+                required
               />
             </div>
             <div class="mb-4">
@@ -56,8 +56,9 @@
               <textarea
                 placeholder="What’s the problem it aims to solve, and why it's an exciting idea."
                 class="form-control shadow-sm rounded-2 text-light small-text lh-base"
-                style="height: 100px;"
+                style="height: 100px"
                 name="startupMessage"
+                required
               ></textarea>
             </div>
             <div class="mb-4">
@@ -131,7 +132,6 @@
 </template>
 <style lang="scss">
 .contact-form {
-  background: url(../assets/code.webp)
-    left 150px top 100px no-repeat;
+  background: url(../assets/code.webp) left 150px top 100px no-repeat;
 }
 </style>
